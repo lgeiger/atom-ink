@@ -54,7 +54,8 @@ class Result
   createView: (opts) ->
     {content, fade, loading} = opts
     @view = document.createElement 'div'
-    @view.classList.add 'ink', 'result'
+    @view.setAttribute 'tabindex', '-1'
+    @view.classList.add 'ink', 'result'#, 'native-key-bindings'
     switch @type
       when 'inline'
         @view.classList.add 'inline'

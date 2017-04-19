@@ -11,6 +11,9 @@
 'ink-console .editor':
   'enter': 'console:evaluate'
 
+'.ink':
+  'ctrl-c': 'native!'
+
 'ink-console':
   'shift-space': 'unset!'
 
